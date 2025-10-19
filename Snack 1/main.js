@@ -1,5 +1,5 @@
-
 //Creare un array di oggetti
+
 
 let bici = [
    {
@@ -28,3 +28,11 @@ let bici = [
    }
 ];
 
+let biciMinore = bici[0];
+
+for(let i = 1; i < bici.length; i++) {
+    if (bici[i].peso < biciMinore.peso) {
+       biciMinore = bici[i];
+    };
+};
+console.log(biciMinore);
